@@ -1,4 +1,4 @@
-package core;
+package service;
 
 import model.BudgetEntry;
 import model.SpendingEntry;
@@ -10,11 +10,11 @@ public class Ledger {
     List<BudgetEntry> budgets = new ArrayList<>();
     List<SpendingEntry> spendings = new ArrayList<>();
 
-    void addBudget(BudgetEntry budget) {
+    public void addBudget(BudgetEntry budget) {
         budgets.add(budget);
     }
 
-    void addSpending(SpendingEntry spending) {
+    public void addSpending(SpendingEntry spending) {
         spendings.add(spending);
     }
 

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CsvParser {
-    List<BudgetEntry> readBudgets(Path csvFile) throws IOException {
+    public List<BudgetEntry> readBudgets(Path csvFile) throws IOException {
         List<BudgetEntry> budgets = new ArrayList<>();
         try (BufferedReader reader = Files.newBufferedReader(csvFile)) {
             reader.readLine();
@@ -29,7 +29,7 @@ public class CsvParser {
         return budgets;
     }
 
-    List<SpendingEntry> readSpendings(Path csvFile) throws IOException {
+    public List<SpendingEntry> readSpendings(Path csvFile) throws IOException {
         List<SpendingEntry> spendings = new ArrayList<>();
         try (BufferedReader reader = Files.newBufferedReader(csvFile)) {
             reader.readLine();

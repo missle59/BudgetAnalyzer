@@ -3,8 +3,8 @@ package model;
 import java.math.BigDecimal;
 
 public class BudgetEntry {
-    private String category;
-    private BigDecimal amount;
+    private final String category;
+    private final BigDecimal amount;
 
     public BudgetEntry(String category, BigDecimal amount) {
         this.category = category;
@@ -17,13 +17,5 @@ public class BudgetEntry {
 
     public BigDecimal getAmount() {
         return amount;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
     }
 }

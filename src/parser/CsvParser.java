@@ -1,4 +1,4 @@
-package io;
+package parser;
 
 import model.BudgetEntry;
 import model.SpendingEntry;

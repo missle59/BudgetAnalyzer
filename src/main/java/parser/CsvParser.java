@@ -1,7 +1,7 @@
-package parser;
+package main.java.parser;
 
-import model.BudgetEntry;
-import model.SpendingEntry;
+import main.java.model.BudgetEntry;
+import main.java.model.SpendingEntry;
 
 import java.io.BufferedReader;
 import java.io.IOException;

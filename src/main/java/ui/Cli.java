@@ -1,7 +1,7 @@
-package ui;
+package main.java.ui;
 
-import parser.CsvParser;
-import service.Ledger;
+import main.java.parser.CsvParser;
+import main.java.service.Ledger;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

@@ -1,8 +1,8 @@
-package service;
+package main.java.service;
 
-import model.BudgetEntry;
-import model.CategorySummary;
-import model.SpendingEntry;
+import main.java.model.BudgetEntry;
+import main.java.model.CategorySummary;
+import main.java.model.SpendingEntry;
 
 import java.math.BigDecimal;
 import java.util.*;

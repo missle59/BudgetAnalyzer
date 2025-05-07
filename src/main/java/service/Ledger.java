@@ -1,7 +1,7 @@
-package service;
+package main.java.service;
 
-import model.BudgetEntry;
-import model.SpendingEntry;
+import main.java.model.BudgetEntry;
+import main.java.model.SpendingEntry;
 
 import java.util.ArrayList;
 import java.util.List;

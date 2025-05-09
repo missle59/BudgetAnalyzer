@@ -18,6 +18,9 @@ public class Cli {
         if (args.length == 2) {
             budgetPath = Paths.get(args[0]);
             spendingPath = Paths.get(args[1]);
+        } else if (args.length == 0) {
+            budgetPath = Path.of(Cli.class.getResource("/data/budget.csv").getPath());
+            spendingPath = Path.of(Cli.class.getResource("/data/spending.csv").getPath());
         } else {
             System.err.println("Usage: java -jar budget-analyzer.jar <budget.csv> <spending.csv>");
             System.exit(1);

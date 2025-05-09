@@ -26,9 +26,9 @@ public class ConsolePrinter {
 
         for (CategorySummary summary : summaries) {
             catWidth = Math.max(catWidth, summary.getCategory().length());
-            budgetWidth = Math.max(budgetWidth, String.format("%.2f", summary.getBudgeted()).length());
-            spentWidth = Math.max(spentWidth, String.format("%.2f", summary.getSpent()).length());
-            diffWidth = Math.max(diffWidth, String.format("%.2f", summary.getDifference()).length());
+            budgetWidth = Math.max(budgetWidth, format(summary.getBudgeted()).length());
+            spentWidth = Math.max(spentWidth, format(summary.getSpent()).length());
+            diffWidth = Math.max(diffWidth, format(summary.getDifference()).length());
         }
 
         String format = String.format("%%-%ds %%%ds %%%ds %%%ds", catWidth, budgetWidth, spentWidth, diffWidth);
